@@ -25,10 +25,11 @@ class ProjectConfiguration extends sfProjectConfiguration
     $this->enablePlugins('sfJqueryReloadedPlugin');
     $this->enablePlugins('fpErrorNotifierPlugin');
     $this->enablePlugins('fpPaymentPlugin');
-    $this->enablePlugins('fpPaymentTaxPlugin');
     $this->enablePlugins('fpPaymentCartPlugin');
+    $this->enablePlugins('fpPaymentTaxPlugin');
     $this->enablePlugins('fpPaymentShippingPlugin');
     $this->enablePlugins('fpPaymentPayPalPlugin');
     $this->enablePlugins('fpPaymentAuthorizePlugin');
+    $this->enablePlugins('sfSslRequirementPlugin');
   }
 }

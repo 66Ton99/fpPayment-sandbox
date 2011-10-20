@@ -4,6 +4,8 @@
 rendering: ~
 security:  ~
 
+sfSslRequirement:
+  class: sfSslRequirementFilter
 # insert your own filters here
 
 cache:     ~
