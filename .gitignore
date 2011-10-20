@@ -1,0 +1,16 @@
+/cache/*
+/log/*
+/lib/*/doctrine/base
+/lib/*/doctrine/*/base
+/data/sql/schema.sql
+/web/sf*
+/web/uploads/*/*
+
+
+
+/.buildpath
+/.project
+/.settings
+.DS_Store
+Thumbs.db
+/nbproject

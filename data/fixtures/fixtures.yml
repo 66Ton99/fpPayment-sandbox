@@ -1,0 +1,107 @@
+sfGuardUser:
+  user1:
+    first_name:     User
+    last_name:      Test
+    email_address:  tester@test.com
+    username:       tester
+    password:       123
+    is_active:      1
+    is_super_admin: false
+
+Product:
+  product1:
+    name:   Product1 from seller1
+    price:  13.99
+    Tax:    taxDefault
+  product2:
+    name:   Product2 from seller2
+    price:  100
+    Tax:    taxDefault
+  product3:
+    name:   Product3 from seller2
+    price:  14.01
+    Tax:    taxDefault
+    
+    
+fpPaymentTax:
+  taxDefault:
+    name: 'Default'
+
+fpPaymentTaxData:
+  taxDataUsa:
+    country: USA
+    zip_type: 'none'
+    rate: 8
+  taxDataUsaCa:
+    country: USA
+    state: CA
+    zip_type: 'none'
+    rate: 9
+  taxDataUsaCa90210:
+    country: USA
+    state: CA
+    zip_type: 'single'
+    zip: '94107'
+    rate: 10
+  
+    
+fpPaymentTaxToData:
+  taxToDataDefaultUsaCa90210:
+    Tax: taxDefault
+    Data: taxDataUsaCa90210
+  taxToDataDefaultUsaCa:
+    Tax: taxDefault
+    Data: taxDataUsaCa
+  taxToDataDefaultUsa:
+    Tax: taxDefault
+    Data: taxDataUsa
+    
+fpPaymentCustomerProfile:
+  customerProfileUser:
+    Customer: user1
+    phone: '929-292-2029'
+#    number: '920'
+#    street: 'Thuryyeue'
+    address: 'Thuryyeue 920'
+    city: 'San Francisco'
+    state: 'CA'
+    zip: 94107
+    country: 'US'
+    
+fpPaymentShipping:
+  shippingUpsUsa:
+    name: 'UPS USA'
+    country: 'US'
+    state: 'NY'
+  shippingInternationalUsa:
+    name: 'International USA'
+    country: 'US'
+  shippingInternationalUk:
+    name: 'International Ukrain'
+    country: 'UK'
+  
+fpPaymentShippingData:
+  shippDataUpsUsaCa:
+    Shipping: shippingUpsUsa
+    country: 'USA'
+    state: 'CA'
+    standard_price: 5.05
+    expedited_price: 6.00
+  shippDataUpsUsaCa:
+    Shipping: shippingUpsUsa
+    country: 'USA'
+    state: 'TX '
+    standard_price: 7.05
+    expedited_price: 8.00
+  shippDataIntUsaUk:
+    Shipping: shippingInternationalUsa
+    country: 'UK'
+    standard_price: 15.00
+    expedited_price: 17.00
+  shippDataIntUkUsa:
+    Shipping: shippingInternationalUk
+    country: 'US'
+    standard_price: 15.00
+    expedited_price: 17.00
+    
+    

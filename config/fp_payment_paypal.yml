@@ -1,0 +1,5 @@
+all:
+  form_url: 'www.sandbox.paypal.com'
+  form_hidden_fields:
+    business: 'leftco_1317812970_biz@66ton99.org.ua'
+      

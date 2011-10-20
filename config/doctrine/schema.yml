@@ -1,0 +1,13 @@
+Product:
+  actAs:
+    fpPaymentProduct: ~
+    fpPaymentTaxable: ~
+    fpPaymentShippable: ~
+    Timestampable: ~
+  columns:
+#  relations:
+#    Seller:
+#      class: Seller
+#      local: seller_id
+#      onDelete: CASCADE
+

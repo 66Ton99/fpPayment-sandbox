@@ -1,0 +1,33 @@
+[submodule "plugins/fpPaymentPlugin"]
+	path = plugins/fpPaymentPlugin
+	url = git@github.com:66Ton99/fpPaymentPlugin.git
+[submodule "plugins/fpPaymentCartPlugin"]
+	path = plugins/fpPaymentCartPlugin
+	url = git@github.com:66Ton99/fpPaymentCartPlugin.git
+[submodule "plugins/fpPaymentPayPalPlugin"]
+	path = plugins/fpPaymentPayPalPlugin
+	url = git@github.com:66Ton99/fpPaymentPayPalPlugin.git
+[submodule "plugins/fpPaymentAuthorizePlugin"]
+	path = plugins/fpPaymentAuthorizePlugin
+	url = git@github.com:66Ton99/fpPaymentAuthorizePlugin.git
+[submodule "plugins/fpErrorNotifierPlugin"]
+	path = plugins/fpErrorNotifierPlugin
+	url = git@github.com:66Ton99/fpErrorNotifierPlugin.git
+[submodule "plugins/sfPhpunitPlugin"]
+	path = plugins/sfPhpunitPlugin
+	url = git@github.com:66Ton99/sfPhpunitPlugin.git
+[submodule "plugins/sfDoctrineGuardPlugin"]
+	path = plugins/sfDoctrineGuardPlugin
+	url = https://github.com/davidsblom/sfDoctrineGuardPlugin.git
+[submodule "plugins/sfJqueryReloadedPlugin"]
+	path = plugins/sfJqueryReloadedPlugin
+	url = https://github.com/davidsblom/sfJqueryReloadedPlugin.git
+[submodule "lib/vendor/symfony"]
+	path = lib/vendor/symfony
+	url = https://github.com/vjousse/symfony-1.4.git
+[submodule "plugins/fpPaymentTaxPlugin"]
+	path = plugins/fpPaymentTaxPlugin
+	url = git@github.com:66Ton99/fpPaymentTaxPlugin.git
+[submodule "plugins/fpPaymentShippingPlugin"]
+  path = plugins/fpPaymentShippingPlugin
+  url = git@github.com:66Ton99/fpPaymentShippingPlugin.git

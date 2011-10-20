@@ -1,0 +1,5 @@
+all:
+  form_url: 'test.authorize.net'
+  form_hidden_fields:
+    x_login: '54PB5egZ'
+    x_tran_key: '48V258vr55AE8tcg'

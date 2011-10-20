@@ -1,0 +1,30 @@
+prod:
+
+all:
+  handler:
+    class:                     fpErrorNotifierHandlerIgnore
+    options:
+      ignore_@:                true
+      ignore_errors:           []
+#      ignore_exceptions:       [FooException]
+      ignore_duplication:      false
+      ignore_duplication_time: 3600 # seconds
+      log_ignored:             true
+        
+  message:
+    class:                     fpErrorNotifierMessage
+    options:                   {}
+    
+  helper: 
+    class:                     fpErrorNotifierMessageHelper
+    options:                   {}
+    
+  decorator:
+    class:                     fpErrorNotifierDecoratorHtml
+    options:                   {}
+  
+  driver:
+    class:                     fpErrorNotifierDriverMailNative
+    options:
+      to:                      forma@66ton99.org.ua
+      from:                    payment@66ton99.org.ua
