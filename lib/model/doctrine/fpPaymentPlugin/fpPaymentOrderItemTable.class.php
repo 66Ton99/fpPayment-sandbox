@@ -7,13 +7,14 @@
  */
 class fpPaymentOrderItemTable extends PluginfpPaymentOrderItemTable
 {
-    /**
-     * Returns an instance of this class.
-     *
-     * @return object fpPaymentOrderItemTable
-     */
-    public static function getInstance()
-    {
-        return Doctrine_Core::getTable('fpPaymentOrderItem');
-    }
+
+  /**
+   * Returns an instance of this class.
+   *
+   * @return fpPaymentOrderItemTable
+   */
+  public static function getInstance()
+  {
+    return Doctrine_Core::getTable('fpPaymentOrderItem');
+  }
 }
