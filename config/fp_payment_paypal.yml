@@ -1,5 +1,8 @@
 all:
-  form_url: 'www.sandbox.paypal.com'
-  form_hidden_fields:
-    business: 'leftco_1317812970_biz@66ton99.org.ua'
+  ipns:
+    express:
+      url: 'www.sandbox.paypal.com'
+      url_path: '/cgi-bin/webscr?'
+      form_hidden_fields:
+        business: 'leftco_1317812970_biz@66ton99.org.ua'
       
