@@ -1,8 +1,17 @@
 all:
-  ipns:
+  ipn:
     express:
       url: 'www.sandbox.paypal.com'
       url_path: '/cgi-bin/webscr?'
       form_hidden_fields:
         business: 'leftco_1317812970_biz@66ton99.org.ua'
+    adaptive:
+      checkout_url: 'www.sandbox.paypal.com'
+      url: 'api-3t.sandbox.paypal.com'
+      fields:
+         USER: 'leftco_1317812970_biz_api1.66ton99.org.ua'
+         PWD: '1317813005'
+         SIGNATURE: 'AFcWxV21C7fd0v3bYYYRCpSSRl31A.Nlbkq0n7eMOKw24aijdEK5mhPA'
+         paymentType: 'Authorization' # or 'Sale' or 'Order'
+         CURRENCYCODE: 'USD'
       
