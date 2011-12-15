@@ -1,17 +1,26 @@
 all:
   ipn:
-    express:
+    standart:
       url: 'www.sandbox.paypal.com'
-      url_path: '/cgi-bin/webscr?'
       form_hidden_fields:
         business: 'leftco_1317812970_biz@66ton99.org.ua'
-    adaptive:
+    express:
       checkout_url: 'www.sandbox.paypal.com'
       url: 'api-3t.sandbox.paypal.com'
       fields:
-         USER: 'leftco_1317812970_biz_api1.66ton99.org.ua'
-         PWD: '1317813005'
-         SIGNATURE: 'AFcWxV21C7fd0v3bYYYRCpSSRl31A.Nlbkq0n7eMOKw24aijdEK5mhPA'
-         paymentType: 'Authorization' # or 'Sale' or 'Order'
-         CURRENCYCODE: 'USD'
+        USER: 'leftco_1317812970_biz_api1.66ton99.org.ua'
+        PWD: '1317813005'
+        SIGNATURE: 'AFcWxV21C7fd0v3bYYYRCpSSRl31A.Nlbkq0n7eMOKw24aijdEK5mhPA'
+        paymentType: 'Authorization' # or 'Sale' or 'Order'
+        CURRENCYCODE: 'USD'
+    adaptive:
+      url: 'svcs.sandbox.paypal.com'
+      checkout_url: 'www.sandbox.paypal.com'
+      headers:
+        X-PAYPAL-SECURITY-USERID: 'leftco_1323958337_biz_api1.66ton99.org.ua'
+        X-PAYPAL-SECURITY-SIGNATURE: 'AiVV3JCLA9mYd10BRlfKaSS03DKnA6wu73Fpd26839qaHxek3b7tj4k7'
+        X-PAYPAL-SECURITY-PASSWORD: '1323958356'
+        X-PAYPAL-APPLICATION-ID: 'APP-80W284485P519543T'
+      fields:
+        'receiverList.receiver(0).email': 'leftco_1323958337_biz@66ton99.org.ua'
       
