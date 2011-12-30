@@ -6,6 +6,8 @@
 /web/sf*
 /web/uploads/*/*
 
+/config/settings.yml
+
 
 
 /.buildpath

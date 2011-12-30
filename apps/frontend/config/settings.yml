@@ -21,6 +21,17 @@ test:
     web_debug:              false
     no_script_name:         false
     etag:                   false
+    
+test_functional:
+  .settings:
+    enabled_modules:
+      - sfGuardAuth
+      - fpPaymentCart
+      - fpPaymentCheckout
+      - fpPaymentPayPal
+      - fpPaymentAuthorize
+      - fpPaymentShipping
+      - sfPhpunit
 
 all:
   .settings:

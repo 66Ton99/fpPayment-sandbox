@@ -13,6 +13,8 @@
       <?php echo link_to('Product listing', '@homepage') ?>
       <?php echo link_to('Cart', '@fpPaymentCartPlugin_show') ?>
     </div>
-    <?php echo $sf_content ?>
+    <div id="content">
+      <?php echo $sf_content ?>
+    </div>
   </body>
 </html>
