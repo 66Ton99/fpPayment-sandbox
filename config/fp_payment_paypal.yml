@@ -1,26 +1,27 @@
 all:
+  ipn_url: 'sandbox.paypal.com'
   ipn:
     standart:
-      url: 'www.sandbox.paypal.com'
+      url: 'sandbox.paypal.com'
       form_hidden_fields:
-        business: 'seller_1325270154_biz@66ton99.org.ua'
+        business: 'seler1_1325697721_biz@66ton99.org.ua'
     express:
-      checkout_url: 'www.sandbox.paypal.com'
+      checkout_url: 'sandbox.paypal.com'
       url: 'api-3t.sandbox.paypal.com'
       fields:
-        USER: 'seller_1325270154_biz@66ton99.org.ua'
-        PWD: '1325270178'
-        SIGNATURE: 'AKvWZPDhmyHvNKLDt.DSqwPqPzBLANkWoZNZqtFTRqMMmvsZ6JpOW.Sh'
+        USER: 'seler1_1325697721_biz@66ton99.org.ua'
+        PWD: '1325697746'
+        SIGNATURE: 'AutJxzrKgX0ZNux-MAKjDR5ysdmDAtw-3as2.dEqga0o9SaaX-XcKqO1'
         paymentType: 'Authorization' # or 'Sale' or 'Order'
         CURRENCYCODE: 'USD'
     adaptive:
       url: 'svcs.sandbox.paypal.com'
       checkout_url: 'www.sandbox.paypal.com'
       headers:
-        X-PAYPAL-SECURITY-USERID: 'seller_1325270154_biz_api1.66ton99.org.ua'
-        X-PAYPAL-SECURITY-SIGNATURE: 'AKvWZPDhmyHvNKLDt.DSqwPqPzBLANkWoZNZqtFTRqMMmvsZ6JpOW.Sh'
-        X-PAYPAL-SECURITY-PASSWORD: '1325270178'
+        X-PAYPAL-SECURITY-USERID: 'seler1_1325697721_biz_api1.66ton99.org.ua'
+        X-PAYPAL-SECURITY-SIGNATURE: 'AutJxzrKgX0ZNux-MAKjDR5ysdmDAtw-3as2.dEqga0o9SaaX-XcKqO1'
+        X-PAYPAL-SECURITY-PASSWORD: '1325697746'
         X-PAYPAL-APPLICATION-ID: 'APP-80W284485P519543T'
       fields:
-        'receiverList.receiver(0).email': 'seller_1325270154_biz@66ton99.org.ua'
+        'receiverList.receiver(0).email': 'seler1_1325697721_biz@66ton99.org.ua'
       

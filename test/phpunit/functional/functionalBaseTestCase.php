@@ -3,7 +3,7 @@
 abstract class functionalBaseTestCase extends sfBasePhpunitMinkTestCase
 {
   
-  protected $timeout = 5000;
+  protected $timeout = 10000;
   
   protected $url;
   
@@ -68,7 +68,7 @@ abstract class functionalBaseTestCase extends sfBasePhpunitMinkTestCase
     $this->assertNotNull($passwordEl = $page->find('css', '#signin_password'));
     $passwordEl->setValue($password);
     $mainEl->pressButton('Signin');
-    $this->wait("$('h1').text() == 'Product List'");
+    $this->wait("document.body.getElementsByTagName('h1')[0].innerHTML == 'Product List'");
     if (null !== ($h1 = $page->find('css', '#content h1')))
     {
       if ('Signin' == $h1->getText()) $this->fail("Login as '{$user}' fail");
@@ -80,11 +80,11 @@ abstract class functionalBaseTestCase extends sfBasePhpunitMinkTestCase
    *
    * @return void
    */
-  public function wait()
+  public function wait($condition)
   {
-    if ('selenium' == $this->getMink()->getDefaultSessionName())
+    if (!in_array($this->getMink()->getDefaultSessionName(), array('goutte')))
     {
-      $this->getSession()->wait($this->timeout, $condition);
+      $this->getSession()->wait($this->timeout, 'document.body && ' . $condition);
     }
   }
 }

@@ -3,3 +3,35 @@
 all:
   init:
     apps_test_index:     false
+  mink:
+    default_driver: 'goutte'
+    drivers:
+      goutte:
+        zendConfig: [encodecookies: true] # zend config parameters
+        serverParameters: [] # server parameters
+      sahi:
+        browser: 'chrome' # browser name to use
+        sid: null # sahi SID
+        host: '127.0.0.1' # sahi proxy host
+        port: 9999 # port number
+      zombie:
+        host: '127.0.0.1' # zombie.js server host
+        port: 8124 # port number
+        autoServer: true # use bundled with driver server or manually started one
+        nodeBin: 'node' # path to node binary
+      selenium:
+        host: '127.0.0.1' # selenium server server host
+        port: '4444' # port number
+        browser: 'firefox' # browser name to use
+        baseUrl: 'http://payment.tonpc.forma-dev.com/' # base URL
+        timeout: 30 # time out in seconds
+      webdriver:
+        browser: 'firefox' #browser name
+        host: 'http://127.0.0.1:4444/wd/hub' #selenium server server host
+        desiredCapabilities: # #The desired capabilities
+          firefox_profile: 'Selenium'
+          browserName: 'firefox'
+          version: '8'
+          platform: 'ANY'
+          browserVersion: '8'
+          browser: 'firefox'

@@ -26,6 +26,7 @@ test_functional:
   .settings:
     enabled_modules:
       - sfGuardAuth
+      - fpPayment
       - fpPaymentCart
       - fpPaymentCheckout
       - fpPaymentPayPal
@@ -37,6 +38,7 @@ all:
   .settings:
     enabled_modules:
       - sfGuardAuth
+      - fpPayment
       - fpPaymentCart
       - fpPaymentCheckout
       - fpPaymentPayPal
